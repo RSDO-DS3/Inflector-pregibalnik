@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+  g2p:
+    image: clarin/g2p:latest
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - pregibalnik
+    volumes:
+      - ./data/dict:/app/data/dict
+      - ./data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
+    ports:
+      - '9093:8080'
+    expose:
+      - '8080'
+
+networks:
+  pregibalnik:
+    external: true

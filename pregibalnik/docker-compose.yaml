@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  pregibalnik:
+    image: clarin/pregibalnik:latest
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - FORM_GENERATOR_URL=http://form-generator:8080
+      - ACCENTUATOR_URL=http://accentuator:8080
+      - G2P_CONVERTER_URL=http://g2p-converter:8080
+    networks:
+      - pregibalnik
+    ports:
+      - '9095:8080'
+    expose:
+      - '8080'
+
+networks:
+  pregibalnik:
+    external: true

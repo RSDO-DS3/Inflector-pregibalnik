@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  form-generator:
+    image: clarin/form-generator:latest
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - pregibalnik
+    volumes:
+      - ./data/models:/app/data/models
+      - ./data/resources:/app/data/resources
+      - ./data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
+    ports:
+      - '9091:8080'
+    expose:
+      - '8080'
+
+networks:
+  pregibalnik:
+    external: true

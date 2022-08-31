@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  accentuatorr:
+    image: clarin/accentuator:latest
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - pregibalnik
+    volumes:
+      - ./data/cnn:/app/data/cnn
+      - ./data/environment.pkl:/app/data/environment.pkl
+      - ./data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
+    ports:
+      - '9092:8080'
+    expose:
+      - '8080'
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#            - driver: nvidia
+#              count: 1
+#              capabilities: [ gpu ]
+
+networks:
+  pregibalnik:
+    external: true

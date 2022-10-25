@@ -1,9 +1,11 @@
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import os
 import pickle
+import tensorflow as tf
 
 from lib.prepare_data import Data
-
+import gc
 
 class SloveneAccentuator:
 
@@ -43,6 +45,23 @@ class SloveneAccentuator:
             os.path.join(models_directory, 'accent_classification/syllables/v2_0/20_final_epoch.h5'),
             os.path.join(models_directory, 'accent_classification/syllabled_letters/v2_0/20_final_epoch.h5'))
 
+        # LOAD DATA CLASSES
+        # location
+        self.data_location_l = Data('l', shuffle_all_inputs=False, convert_multext=False)
+        self.data_location_s = Data('s', shuffle_all_inputs=False, convert_multext=False)
+        self.data_location_sl = Data('sl', shuffle_all_inputs=False, convert_multext=False)
+        self.data_location_l_reverse = Data('l', shuffle_all_inputs=False, convert_multext=False, reverse_inputs=False)
+        self.data_location_s_reverse = Data('s', shuffle_all_inputs=False, convert_multext=False, reverse_inputs=False)
+        self.data_location_sl_reverse = Data('sl', shuffle_all_inputs=False, convert_multext=False, reverse_inputs=False)
+
+        # type
+        self.data_type_l = Data('l', shuffle_all_inputs=False, accent_classification=True, convert_multext=False)
+        self.data_type_s = Data('s', shuffle_all_inputs=False, accent_classification=True, convert_multext=False)
+        self.data_type_sl = Data('sl', shuffle_all_inputs=False, accent_classification=True, convert_multext=False)
+        self.data_type_l_reverse = Data('l', shuffle_all_inputs=False, accent_classification=True, convert_multext=False, reverse_inputs=False)
+        self.data_type_s_reverse = Data('s', shuffle_all_inputs=False, accent_classification=True, convert_multext=False, reverse_inputs=False)
+        self.data_type_sl_reverse = Data('sl', shuffle_all_inputs=False, accent_classification=True, convert_multext=False, reverse_inputs=False)
+
     def convert_to_correct_accentuation(self, w):
         """The accentuate_word function returns placeholder accentuation symbols.
         They need to be replaced with actual accentuation symbols. """
@@ -75,7 +94,20 @@ class SloveneAccentuator:
                                                                             self.syllabled_letter_type_co_model,
                                                                             self.dictionary, self.max_word, self.max_num_vowels, self.vowels,
                                                                             self.accented_vowels, self.feature_dictionary,
-                                                                            self.syllable_dictionary)
+                                                                            self.syllable_dictionary,
+                                                                            self.data_location_l,
+                                                                            self.data_location_s,
+                                                                            self.data_location_sl,
+                                                                            self.data_location_l_reverse,
+                                                                            self.data_location_s_reverse,
+                                                                            self.data_location_sl_reverse,
+                                                                            self.data_type_l,
+                                                                            self.data_type_s,
+                                                                            self.data_type_sl,
+                                                                            self.data_type_l_reverse,
+                                                                            self.data_type_s_reverse,
+                                                                            self.data_type_sl_reverse
+                                                                            )
 
         # Convert placeholder accentuation symbols to actual accentuation symbols
         accented_words_with_correct_accentuation_symbols = []
@@ -88,4 +120,6 @@ class SloveneAccentuator:
             accentuated_form = accented_words_with_correct_accentuation_symbols[index]
             final_list.append([form, msd, accentuated_form])
 
+        tf.keras.backend.clear_session()
+        gc.collect()
         return final_list

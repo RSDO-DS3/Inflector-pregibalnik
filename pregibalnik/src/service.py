@@ -36,7 +36,7 @@ async def process(word_in: WordIn):
         json={
             "lema": word_in.lema,
             "msd": word_in.msd,
-            "patternCode": "Sm3.2.o"  # TODO
+            "patternCode": word_in.patternCode
         }
     )
 

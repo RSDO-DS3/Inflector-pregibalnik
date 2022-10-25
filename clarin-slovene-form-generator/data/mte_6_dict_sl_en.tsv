@@ -1899,3 +1899,34 @@ Xh	Residual Type=hashtag	Nh	neuvrščeno vrsta=ključnik	160	171	#EuroBasket2013
 Xa	Residual Type=at	Na	neuvrščeno vrsta=afna	743	1258	@ErikaPlaninsec, @Simobil, @petrasovdat, @petra_jansa, @MarkoSket
 Xp	Residual Type=program	Np	neuvrščeno vrsta=program	1	1	2+2=5
 Z	Punctuation	U	ločilo	66	2989	,, ., .., ..., ?
+Ncm	Noun Type=common Gender=masculine	Som	samostalnik vrsta=občno_ime spol=moški	_	_	_
+Ncf	Noun Type=common Gender=feminine	Soz	samostalnik vrsta=občno_ime spol=ženski	_	_	_
+Ncn	Noun Type=common Gender=neuter	Sos	samostalnik vrsta=občno_ime spol=srednji	_	_	_
+Npm	Noun Type=proper Gender=masculine	Slm	samostalnik vrsta=lastno_ime spol=moški	_	_	_
+Npf	Noun Type=proper Gender=feminine	Slz	samostalnik vrsta=lastno_ime spol=ženski	_	_	_
+Npn	Noun Type=proper Gender=neuter	Sls	samostalnik vrsta=lastno_ime spol=srednji	_	_	_
+Vme	Verb Type=main Aspect=perfective	Ggd	glagol vrsta=glavni vid=dovršni	_	_	_
+Vmp	Verb Type=main Aspect=progressive	Ggn	glagol vrsta=glavni vid=nedovršni	_	_	_
+Vmb	Verb Type=main Aspect=biaspectual	Ggv	glagol vrsta=glavni vid=dvovidski	_	_	_
+Ag	Adjective Type=general	Pp	pridevnik vrsta=splošni	_	_	_
+As	Adjective Type=possessive	Ps	pridevnik vrsta=svojilni	_	_	_
+Ap	Adjective Type=participle	Pd	pridevnik vrsta=deležniški	_	_	_
+Rg	Adverb Type=general	Rs	prislov vrsta=splošni	_	_	_
+Rr	Adverb Type=participle	Rd	prislov vrsta=deležje	_	_	_
+Pp	Pronoun Type=personal	Zo	zaimek vrsta=osebni	_	_	_
+Ps	Pronoun Type=possessive	Zs	zaimek vrsta=svojilni	_	_	_
+Pd	Pronoun Type=demonstrative	Zk	zaimek vrsta=kazalni	_	_	_
+Pr	Pronoun Type=relative	Zz	zaimek vrsta=oziralni	_	_	_
+Px	Pronoun Type=reflexive	Zp	zaimek vrsta=povratni	_	_	_
+Pg	Pronoun Type=general	Zc	zaimek vrsta=celostni	_	_	_
+Pq	Pronoun Type=interrogative	Zv	zaimek vrsta=vprašalni	_	_	_
+Pi	Pronoun Type=indefinite	Zn	zaimek vrsta=nedoločni	_	_	_
+Pz	Pronoun Type=negative	Zl	zaimek vrsta=nikalni	_	_	_
+Mdc	Numeral Form=digit Type=cardinal	Kag	števnik zapis=arabski vrsta=glavni	_	_	_
+Mdo	Numeral Form=digit Type=ordinal	Kav	števnik zapis=arabski vrsta=vrstilni	_	_	_
+Mrc	Numeral Form=roman Type=cardinal	Krg	števnik zapis=rimski vrsta=glavni	_	_	_
+Mro	Numeral Form=roman Type=ordinal	Krv	števnik zapis=rimski vrsta=vrstilni	_	_	_
+Mlc	Numeral Form=letter Type=cardinal	Kbg	števnik zapis=besedni vrsta=glavni	_	_	_
+Mlo	Numeral Form=letter Type=ordinal	Kbv	števnik zapis=besedni vrsta=vrstilni	_	_	_
+Mlp	Numeral Form=letter Type=pronominal	Kbz	števnik zapis=besedni vrsta=zaimkovni	_	_	_
+Mls	Numeral Form=letter Type=special	Kbd	števnik zapis=besedni vrsta=drugi	_	_	_

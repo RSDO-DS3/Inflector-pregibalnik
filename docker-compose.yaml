@@ -13,8 +13,8 @@ services:
       - ./clarin-slovene-form-generator/data/models:/app/data/models
       - ./clarin-slovene-form-generator/data/resources:/app/data/resources
       - ./clarin-slovene-form-generator/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
-    ports:
-      - '9091:8080'
+#    ports:
+#      - '9091:8080'
     networks:
       - pregibalnik
 
@@ -29,8 +29,8 @@ services:
       - ./clarin-slovene-accentuator/data/cnn:/app/data/cnn
       - ./clarin-slovene-accentuator/data/environment.pkl:/app/data/environment.pkl
       - ./clarin-slovene-accentuator/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
-    ports:
-      - '9092:8080'
+#    ports:
+#      - '9092:8080'
     networks:
       - pregibalnik
 #    deploy:
@@ -51,8 +51,8 @@ services:
     volumes:
       - ./clarin-slovene-g2p/data/dict:/app/data/dict
       - ./clarin-slovene-g2p/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
-    ports:
-      - '9093:8080'
+#    ports:
+#      - '9093:8080'
     networks:
       - pregibalnik
 

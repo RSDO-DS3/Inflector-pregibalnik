@@ -13,3 +13,7 @@ voiced_to_voiceless_obstruent	C_9.2	C_9.1	dž	č
 voiceless_to_voiced_obstruent	C_9.1	C_9.2	č	dž
 voiced_to_voiceless_obstruent	C_8.2	C_8.1	dz	c
 voiceless_to_voiced_obstruent	C_8.1	C_8.2	c	dz
+voiceless_to_voiced_obstruent	C_4	C_12.1	f	v
+voiced_to_voiceless_obstruent	C_7.2	C_7.1	ɣ	h
+voiceless_to_voiced_obstruent	C_7.1	C_7.2	h	ɣ
+voiced_to_voiceless_obstruent	C_1.2.3	C_1.1.2	b_f	p_f

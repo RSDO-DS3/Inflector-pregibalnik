@@ -1,0 +1,596 @@
+[
+    {
+        "msd": "Somei",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaš",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáš",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃ",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:S",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somer",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaša",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáša",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃa",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Sa",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somed",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašu",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftášu",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃu",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Su",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sometd",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaša",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáša",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃa",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Sa",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somem",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašu",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftášu",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃu",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Su",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Someo",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašem",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftášem",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃɛm",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:SEm",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somdi",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaša",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáša",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃa",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Sa",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somdr",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašev",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftášev",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃɛu̯",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:SEU",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somdd",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašema",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftašema",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naftaʃɛma",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "naftaSEma",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somdt",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaša",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáša",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃa",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Sa",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somdm",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaših",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáših",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃix",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Six",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Somdo",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašema",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftašema",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naftaʃɛma",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "naftaSEma",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sommi",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaši",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáši",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃi",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Si",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sommr",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašev",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftášev",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃɛu̯",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:SEU",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sommd",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftašem",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftášem",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃɛm",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:SEm",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sommt",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaše",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáše",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃɛ",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:SE",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sommm",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaših",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáših",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃix",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Six",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "msd": "Sommo",
+        "forms": [
+            {
+                "orthographies": [
+                    {
+                        "text": "naftaši",
+                        "morphologyPatterns": "Sm2.2.o",
+                        "accentuations": [
+                            {
+                                "text": "naftáši",
+                                "type": "dynamic",
+                                "pronunciations": [
+                                    {
+                                        "forms": [
+                                            {
+                                                "text": "naˈftaːʃi",
+                                                "script": "IPA"
+                                            },
+                                            {
+                                                "text": "na\"fta:Si",
+                                                "script": "SAMPA"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

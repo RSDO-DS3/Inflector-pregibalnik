@@ -1,6 +1,9 @@
 import os
 import pickle
 from collections import defaultdict as dd
+import sklearn
+from sklearn.linear_model import LogisticRegression
+
 
 class VectorizeLemma:
 

@@ -49,7 +49,11 @@ async def accentuate_all(forms_in: List[FormIn]):
             dummy_forms += 1
 
         # Accentuate list of received word forms
-        accentuated_forms = sloveneAccentuator.get_accentuated_words(forms_to_accentuate)
+        try:
+            accentuated_forms = sloveneAccentuator.get_accentuated_words(forms_to_accentuate)
+        except:
+            # If the accentuator encounters an error when accentuating the list of words, it returns unaccentuated words instead to avoid crashing
+            accentuated_forms = [[sublist[0], sublist[1], sublist[0]] for sublist in forms_to_accentuate]
 
         # Remove dummy forms
         if 0 < dummy_forms:

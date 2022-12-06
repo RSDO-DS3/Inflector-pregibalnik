@@ -22,9 +22,13 @@ try:
 except KeyError as e:
     raise Exception("Missing environment variable {}".format(e.args[0]))
 
-# Create FastAPI application (this object is used by uvicorn web service to load application)
-app = FastAPI()
+try:
+    api_root_path = os.environ["API_ROOT_PATH"]
+except KeyError as e:
+    api_root_path = None
 
+# Create FastAPI application (this object is used by uvicorn web service to load application)
+app = FastAPI(root_path=api_root_path, title="Pregibalnik – Inflector API")
 
 @app.post("/api/process")
 async def process(word_in: WordIn):

@@ -1,0 +1,77 @@
+version: '3.3'
+
+services:
+
+  form-generator:
+    build: 
+      context: ./clarin-slovene-form-generator
+    platform: linux/amd64
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - API_ROOT_PATH=/pregibalnik/form-generator
+    volumes:
+      - ./clarin-slovene-form-generator/data/models:/app/data/models
+      - ./clarin-slovene-form-generator/data/resources:/app/data/resources
+      - ./clarin-slovene-form-generator/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
+    ports:
+      - '127.0.0.1:9091:8080'
+    networks:
+      - pregibalnik
+
+  accentuator:
+    build: 
+      context: ./clarin-slovene-accentuator
+    platform: linux/amd64
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - API_ROOT_PATH=/pregibalnik/accentuator
+    volumes:
+      - ./clarin-slovene-accentuator/data/cnn:/app/data/cnn
+      - ./clarin-slovene-accentuator/data/environment.pkl:/app/data/environment.pkl
+      - ./clarin-slovene-accentuator/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
+    ports:
+      - '127.0.0.1:9092:8080'
+    networks:
+      - pregibalnik
+
+  g2p-converter:
+    build:
+      context: ./clarin-slovene-g2p
+    platform: linux/amd64
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - API_ROOT_PATH=/g2p
+    volumes:
+      - ./clarin-slovene-g2p/data/dict:/app/data/dict
+      - ./clarin-slovene-g2p/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
+    ports:
+      - '127.0.0.1:9093:8080'  
+    networks:
+      - pregibalnik
+
+  pregibalnik:
+    build:
+        context: ./pregibalnik
+    platform: linux/amd64
+    restart: always
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - FORM_GENERATOR_URL=http://form-generator:8080
+      - ACCENTUATOR_URL=http://accentuator:8080
+      - G2P_CONVERTER_URL=http://g2p-converter:8080
+      - API_ROOT_PATH=/pregibalnik
+    networks:
+      - pregibalnik
+    ports:
+      - '127.0.0.1:5015:8080'
+
+networks:
+  pregibalnik:
+    driver: bridge

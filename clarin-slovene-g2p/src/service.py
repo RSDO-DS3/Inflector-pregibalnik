@@ -1,3 +1,4 @@
+import os
 from logging import getLogger
 from typing import List
 from SloveneG2P import SloveneG2P
@@ -8,14 +9,19 @@ from model.PronunciationOut import PronunciationOut
 # Parameters
 data_directory = "../data/dict"
 
+try:
+    api_root_path = os.environ["API_ROOT_PATH"]
+except KeyError as e:
+    api_root_path = None
+
 # Initialize components
 logger = getLogger("uvicorn")
 ipa_converter = SloveneG2P(data_directory=data_directory, phoneme_set_option="ipa_symbol", representation_option="cjvt_ipa_detailed_representation", output_option="phoneme_string")
 sampa_converter = SloveneG2P(data_directory=data_directory, phoneme_set_option="sampa_symbol", representation_option="cjvt_sampa_detailed_representation", output_option="phoneme_string")
 
 # Create FastAPI application (this object is used by uvicorn web service to load application)
-app = FastAPI()
-
+#app = FastAPI()
+app = FastAPI(root_path=api_root_path, title="G2P Converter API")
 
 @app.post("/api/convert")
 async def convert(accentuated_form_in: AccentuatedFormIn):

@@ -8,13 +8,13 @@ services:
     platform: linux/amd64
     restart: always
     security_opt:
-      - no-new-privileges:true    
+      - no-new-privileges:true
     volumes:
       - ./clarin-slovene-form-generator/data/models:/app/data/models
       - ./clarin-slovene-form-generator/data/resources:/app/data/resources
       - ./clarin-slovene-form-generator/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
-#    ports:
-#      - '9091:8080'
+    ports:
+      - '127.0.0.1:9091:8080'
     networks:
       - pregibalnik
 
@@ -24,22 +24,15 @@ services:
     platform: linux/amd64
     restart: always
     security_opt:
-      - no-new-privileges:true    
+      - no-new-privileges:true
     volumes:
       - ./clarin-slovene-accentuator/data/cnn:/app/data/cnn
       - ./clarin-slovene-accentuator/data/environment.pkl:/app/data/environment.pkl
       - ./clarin-slovene-accentuator/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
-#    ports:
-#      - '9092:8080'
+    ports:
+      - '127.0.0.1:9092:8080'
     networks:
       - pregibalnik
-#    deploy:
-#      resources:
-#        reservations:
-#          devices:
-#            - driver: nvidia
-#              count: 1
-#              capabilities: [ gpu ]
 
   g2p-converter:
     build:
@@ -51,8 +44,8 @@ services:
     volumes:
       - ./clarin-slovene-g2p/data/dict:/app/data/dict
       - ./clarin-slovene-g2p/data/mte_6_dict_sl_en.tsv:/app/data/mte_6_dict_sl_en.tsv
-#    ports:
-#      - '9093:8080'
+    ports:
+      - '127.0.0.1:9093:8080'  
     networks:
       - pregibalnik
 
@@ -70,7 +63,7 @@ services:
     networks:
       - pregibalnik
     ports:
-      - '9095:8080'
+      - '127.0.0.1:5015:8080'
 
 networks:
   pregibalnik:

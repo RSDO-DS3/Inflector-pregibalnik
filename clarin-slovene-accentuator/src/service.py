@@ -1,3 +1,4 @@
+import os
 from logging import getLogger
 from typing import List
 from fastapi import FastAPI, HTTPException
@@ -11,14 +12,19 @@ env_pickle = "../data/environment.pkl"
 models_directory = "../data/cnn"
 msd_dictionary = "../data/mte_6_dict_sl_en.tsv"
 
+try:
+    api_root_path = os.environ["API_ROOT_PATH"]
+except KeyError as e:
+    api_root_path = None
+
 # Initialize components
 logger = getLogger("uvicorn")
 mte6Translate = Mte6Translate(msd_dictionary)
 sloveneAccentuator = SloveneAccentuator(env_pickle, models_directory)
 
 # Create FastAPI application (this object is used by uvicorn web service to load application)
-app = FastAPI()
-
+#app = FastAPI()
+app = FastAPI(root_path=api_root_path, title="Accentuator API")
 
 @app.post("/api/accentuate")
 async def accentuate(form_in: FormIn):

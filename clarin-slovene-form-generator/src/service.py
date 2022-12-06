@@ -1,3 +1,4 @@
+import os
 from logging import getLogger
 from typing import List
 from fastapi import FastAPI, HTTPException
@@ -13,6 +14,11 @@ resources_directory = "../data/resources"
 models_directory = "../data/models"
 msd_dictionary = "../data/mte_6_dict_sl_en.tsv"
 
+try:
+    api_root_path = os.environ["API_ROOT_PATH"]
+except KeyError as e:
+    api_root_path = None
+
 # Initialize components
 logger = getLogger("uvicorn")
 mte6Translate = Mte6Translate(msd_dictionary)
@@ -21,7 +27,9 @@ form_generator = FormGenerator(resources_directory)
 pattern_code_remapper = PatternCodeRemapper(resources_directory)
 
 # Create FastAPI application (this object is used by uvicorn web service to load application)
-app = FastAPI()
+#app = FastAPI()
+app = FastAPI(root_path=api_root_path, title="Form Generator API")
+
 
 
 @app.post("/api/generate")

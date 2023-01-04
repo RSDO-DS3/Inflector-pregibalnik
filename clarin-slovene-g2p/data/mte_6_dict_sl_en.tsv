@@ -97,6 +97,12 @@ Npnsd	Noun Type=proper Gender=neuter Number=singular Case=dative	Slsed	samostaln
 Npnsa	Noun Type=proper Gender=neuter Number=singular Case=accusative	Slset	samostalnik vrsta=lastno_ime spol=srednji število=ednina sklon=tožilnik	198	48368	Celje, Pohorje, Kosovo, Laško, Sarajevo
 Npnsl	Noun Type=proper Gender=neuter Number=singular Case=locative	Slsem	samostalnik vrsta=lastno_ime spol=srednji število=ednina sklon=mestnik	432	778594	Celju/Celje, Hrvaškem/Hrvaško, Koroškem/Koroško, Primorskem/Primorsko, Kosovu/Kosovo
 Npnsi	Noun Type=proper Gender=neuter Number=singular Case=instrumental	Slseo	samostalnik vrsta=lastno_ime spol=srednji število=ednina sklon=orodnik	164	26341	Podgorjem/Podgorje, Celjem/Celje, Pohorjem/Pohorje, Kosovom/Kosovo, Sredozemljem/Sredozemlje
+Npndn	Noun Type=proper Gender=neuter Number=dual Case=nominative	Slsdi	samostalnik vrsta=lastno_ime spol=srednji število=dvojina sklon=imenovalnik	0	0	_
+Npndg	Noun Type=proper Gender=neuter Number=dual Case=genitive	Slsdr	samostalnik vrsta=lastno_ime spol=srednji število=dvojina sklon=rodilnik	0	0	_
+Npndd	Noun Type=proper Gender=neuter Number=dual Case=dative	Slsdd	samostalnik vrsta=lastno_ime spol=srednji število=dvojina sklon=dajalnik	0	0	_
+Npnda	Noun Type=proper Gender=neuter Number=dual Case=accusative	Slsdt	samostalnik vrsta=lastno_ime spol=srednji število=dvojina sklon=tožilnik	0	0	_
+Npndl	Noun Type=proper Gender=neuter Number=dual Case=locative	Slsdm	samostalnik vrsta=lastno_ime spol=srednji število=dvojina sklon=mestnik	0	0	_
+Npndi	Noun Type=proper Gender=neuter Number=dual Case=instrumental	Slsdo	samostalnik vrsta=lastno_ime spol=srednji število=dvojina sklon=orodnik	0	0	_
 Npnpn	Noun Type=proper Gender=neuter Number=plural Case=nominative	Slsmi	samostalnik vrsta=lastno_ime spol=srednji število=množina sklon=imenovalnik	9		Živila, Vrata, Studenca, Selca, Sela
 Npnpg	Noun Type=proper Gender=neuter Number=plural Case=genitive	Slsmr	samostalnik vrsta=lastno_ime spol=srednji število=množina sklon=rodilnik	11	711	Selc/Selca, Studenc/Studenca, studenc/studenca, SELC/SELCA, Živil/Živila
 Npnpd	Noun Type=proper Gender=neuter Number=plural Case=dative	Slsmd	samostalnik vrsta=lastno_ime spol=srednji število=množina sklon=dajalnik	9		Živilom/Živila, Vratom/Vrata, Studencom/Studenca, Selom/Sela, Selcom/Selca
